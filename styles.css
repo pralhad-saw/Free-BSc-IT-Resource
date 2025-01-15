@@ -1,0 +1,144 @@
+body {
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color:grey;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 10px;
+  margin-left:1.5%;
+  cursor: pointer;
+  background-color: #000000;
+  padding: 10px;
+  border: 0.5px solid #eeeeee;
+  cursor: pointer;
+ text-align:center;
+  width: 97%;
+  
+  color:grey;
+}
+
+.answer {
+  display: none;
+  padding: 20px;
+ color:white;
+  transition: max-height 0.5s ease;
+  font-family:monospace;
+  
+}
+
+
+.output-button{
+  display: none;
+  padding: 20px;
+ color:white;
+  transition: max-height 0.5s ease;
+  font-family:monospace;
+  margin-bottom: 2px;
+  margin-left:60%;
+  cursor: pointer;
+  background-color: red;
+  padding: 3px;
+  border: 0.5px solid black;
+ text-align:center;
+  width: 20%;
+    color:grey;
+    height:22px;
+  
+}
+.output{
+  display: none;
+  padding: 20px;
+ color:white;
+  transition: max-height 0.5s ease;
+  font-family:monospace;
+  
+}
+
+/*
+.main_heading {
+box-shadow: 1px 1px 5px rgba(221, 218, 218, 0.465);
+    text-align: center; //Center the text 
+    border: 2px dashed black; //Add a dotted outline 
+    padding: 10px; // Add some padding for better spacing 
+    width: 80%; //Set the width to 80% of the screen 
+    margin: 20px auto; //Center the element and add margin 
+    text-shadow:1px 1px 0px red;
+    display: block; //Make it a block element to respect width 
+}
+*/
+
+
+.main_heading {
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+    box-shadow: 1px 1px 5px rgba(221, 218, 218, 0.465);
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add some padding for better spacing */
+    width: 80%; /* Set the width to 80% of the screen */
+    margin: 20px auto; /* Center the element and add margin */
+    text-shadow: 1px 1px 0px red;
+    display: block; /* Make it a block element to respect width */
+    color: white; /* Change text color to white for better contrast */
+    background-color: #282c34; /* Background color for better visibility */
+}
+
+
+
+.trigger {
+    position: absolute;
+    z-index: 2;
+    border: 2px solid red;
+    border-radius: 0px;
+   right :-10%;
+     box-shadow: 1px 1px 5px rgba(221, 218, 218, 0.465);
+     background-color: #282c34;
+}
+
+.menu_language{
+        border: 0.5px solid red;
+        padding-left:5px;
+        padding-right:5px;
+        padding-bottom:2px;
+}
+
+.bars {
+  width: 25px;
+  cursor: pointer;
+}
+.bars .line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: square;
+  transition: stroke-dasharray 1s,  stroke-dashoffset 1s;
+}
+.bars .line.top {
+  stroke-dasharray: 40 172;
+}
+.bars .line.middle {
+  stroke-dasharray: 40 111;
+}
+.bars .line.bottom {
+  stroke-dasharray: 40 172;
+}
+.bars.active .top {
+  stroke-dashoffset: -132px;
+}
+.bars.active .middle {
+  stroke-dashoffset: -71px;
+}
+.bars.active .bottom {
+  stroke-dashoffset: -132px;
+  }
